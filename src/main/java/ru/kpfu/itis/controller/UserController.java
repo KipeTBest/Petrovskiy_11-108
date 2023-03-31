@@ -11,7 +11,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
-
+import org.springframework.data.repository.query.Param;
+import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 import java.util.Optional;
 
@@ -38,8 +39,18 @@ public class UserController {
     }
 
     @PostMapping("/user")
-    public String createUser(@ModelAttribute CreateUserRequestDto user) {
-        userService.create(user);
+    public String createUser(@ModelAttribute CreateUserRequestDto user, HttpServletRequest request) {
+        String url = request.getRequestURL().toString().replace(request.getServletPath(), "");
+        userService.create(user, url);
         return "sign_up_success";
+    }
+
+    @GetMapping("/verification")
+    public String verify(@Param("code") String code) {
+        if (userService.verify(code)) {
+            return "verification_success";
+        } else {
+            return "verification_failed";
+        }
     }
 }

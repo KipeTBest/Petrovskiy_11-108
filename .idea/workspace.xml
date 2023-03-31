@@ -5,44 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ff563216-a1b4-4be0-b977-fdf7bddb96fb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/kpfu/itis/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/kpfu/itis/Model/Group.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/kpfu/itis/Model/Passport.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/kpfu/itis/Model/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/kpfu/itis/Model/Subject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/kpfu/itis/Model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/kpfu/itis/config/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/kpfu/itis/controller/MainController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/kpfu/itis/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/kpfu/itis/dto/CreateUserRequestDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/kpfu/itis/dto/UserResponseDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/kpfu/itis/handler/CustomExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/kpfu/itis/repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/kpfu/itis/security/CustomUserDetails.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/kpfu/itis/security/CustomUserDetailsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/kpfu/itis/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/kpfu/itis/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/news.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/profile.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/sign_up.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/sign_up_success.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/kpfu/itis/config/MailConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/verification_failed.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/verification_success.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/kpfu/itis/Model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/kpfu/itis/Model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/kpfu/itis/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/kpfu/itis/controller/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/kpfu/itis/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/kpfu/itis/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/kpfu/itis/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/kpfu/itis/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/kpfu/itis/security/CustomUserDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/kpfu/itis/security/CustomUserDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/kpfu/itis/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/kpfu/itis/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/kpfu/itis/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/kpfu/itis/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/home.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,6 +72,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -116,6 +93,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
@@ -214,6 +192,9 @@
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpringBootOptions">
+    <option name="showAdditionalConfigNotification" value="false" />
+  </component>
   <component name="StandaloneScriptsStorage">
     <option name="files">
       <set>
@@ -236,7 +217,11 @@
       <workItem from="1676638312768" duration="8000" />
       <workItem from="1679037952852" duration="240000" />
       <workItem from="1679047856940" duration="645000" />
-      <workItem from="1679059354940" duration="1928000" />
+      <workItem from="1679059354940" duration="2049000" />
+      <workItem from="1679643142623" duration="2483000" />
+      <workItem from="1679645672473" duration="2466000" />
+      <workItem from="1679648201419" duration="892000" />
+      <workItem from="1680247866184" duration="1177000" />
     </task>
     <servers />
   </component>

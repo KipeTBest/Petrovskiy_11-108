@@ -5,7 +5,7 @@ plugins {
 
 apply(plugin = "io.spring.dependency-management")
 
-group = "ru.kpfu.itis"
+group = "com.solncev"
 version = "1.0-SNAPSHOT"
 
 repositories {
@@ -19,6 +19,12 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter-validation")
     implementation("org.springframework.boot:spring-boot-starter-security")
     implementation("org.springframework.boot:spring-boot-starter-thymeleaf")
+    implementation ("org.springframework.boot:spring-boot-starter-mail")
+
+    implementation ("org.thymeleaf.extras:thymeleaf-extras-springsecurity5:3.0.4.RELEASE")
+    implementation ("org.thymeleaf:thymeleaf-spring5:3.0.15.RELEASE")
+
+    annotationProcessor ("org.springframework.boot:spring-boot-configuration-processor")
 
     //db
     implementation("org.postgresql:postgresql:42.5.3")
@@ -35,6 +41,8 @@ dependencies {
     //test
     testImplementation("org.junit.jupiter:junit-jupiter-api:5.8.1")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.8.1")
+
+    implementation ("javax.mail:javax.mail-api:1.6.2")
 }
 
 tasks.getByName<Test>("test") {

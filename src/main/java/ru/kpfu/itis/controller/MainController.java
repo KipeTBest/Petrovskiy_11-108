@@ -4,12 +4,14 @@ import ru.kpfu.itis.dto.CreateUserRequestDto;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import javax.servlet.http.HttpServletRequest;
 
 @Controller
 public class MainController {
 
     @GetMapping("/home")
-    public String home() {
+    public String home(HttpServletRequest httpServletRequest) {
+        String currentPrincipalName = httpServletRequest.getUserPrincipal().getName();
         return "home";
     }
 
